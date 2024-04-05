@@ -8,7 +8,7 @@ from langchain.prompts import ChatPromptTemplate
 CHROMA_PATH = "chroma"
 
 PROMPT_TEMPLATE = """
-Create a basic DND style campaign with the information provided below. The campaign will start in the major locations:
+Create a basic DND style introduction above information provided below. Think yourself as an old man sitting by the fireplace:
 
 
 {context}
