@@ -8,13 +8,14 @@ from langchain.prompts import ChatPromptTemplate
 CHROMA_PATH = "chroma"
 
 PROMPT_TEMPLATE = """
-Answer the question based only on the following context:
+Create a basic DND style campaign with the information provided below. The campaign will start in the major locations. 
+
 
 {context}
 
 ---
 
-Answer the question based on the above context: {question}
+Your tone of voice is that of a wise elder recounting the story of heroes, champions, and evil entities. {question}
 """
 
 
