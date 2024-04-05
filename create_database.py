@@ -4,6 +4,8 @@ from langchain.schema import Document
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores.chroma import Chroma
 import os
+import openai
+openai.api_key = os.getenv("OPENAI_API_KEY")
 import shutil
 
 CHROMA_PATH = "chroma"
@@ -36,7 +38,7 @@ def split_text(documents: list[Document]):
     chunks = text_splitter.split_documents(documents)
     print(f"Split {len(documents)} documents into {len(chunks)} chunks.")
 
-    document = chunks[10]
+    document = chunks[5]
     print(document.page_content)
     print(document.metadata)
 
