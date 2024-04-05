@@ -8,14 +8,14 @@ from langchain.prompts import ChatPromptTemplate
 CHROMA_PATH = "chroma"
 
 PROMPT_TEMPLATE = """
-Create a basic DND style introduction above information provided below. Think yourself as an old man sitting by the fireplace:
+Which piece of info below is the most fleshed out? 
 
 
 {context}
 
 ---
 
-Your tone of voice is that of a wise elder recounting the story of heroes, champions, and evil entities. {question}
+Create a basic DND style introduction above information provided below. Think yourself as an old man sitting by the fireplace: Your tone of voice is that of a wise elder recounting the story of heroes, champions, and evil entities. Create stories between characters, fights, friendships, and alliances! {question}
 """
 
 
