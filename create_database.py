@@ -1,8 +1,9 @@
 from langchain.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_community.embeddings import OpenAIEmbeddings
 from langchain.vectorstores.chroma import Chroma
+from langchain_community.chat_models import ChatOpenAI
 import os
 import openai
 openai_api_key = os.getenv("OPENAI_API_KEY")
