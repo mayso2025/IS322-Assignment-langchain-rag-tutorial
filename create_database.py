@@ -5,7 +5,7 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores.chroma import Chroma
 import os
 import openai
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = os.getenv("OPENAI_API_KEY")
 import shutil
 
 CHROMA_PATH = "chroma"
